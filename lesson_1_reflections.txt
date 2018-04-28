@@ -1,0 +1,42 @@
+Q How could having easy access to the entire history of a file make you a more efficient programmer in the long term?
+A Having easy access to he entire history of a file gives you more flexibility, saves your time, you have old version and can see whole changes that you make and compare with new version.
+
+Q What do you think are the pros and cons of manually choosing when to create a commit, like you do in Git, vs having versions automatically saved, like Google Docs does?
+A In manually choosing saved you have all the control when to save, what to save and you make decision about saving logic and you choose saving logical changes. In version automatically saved you may have two files(old and new) that have many changes and when you would like to compare there can be a lot of changes and it can and will give you difficulties. You do not have control over it.
+
+Q Why do you think some version control systems, like Git, allow saving multiple files in one commit, while others, like Google Docs, treat each file separately?
+A In my opinion it depends on goals tahat they have. Git was made to work with  programing files(and/or with multiple files together) and most of the time they are related each other and changes in one file make changes in another. But in Google Docs the main goal is to save changes and  have last version of file. 
+
+Q How can you use the commands git log and git diff to view the history of files?
+A step1 - git log - you will see the whole history of commits
+  step2 - git diff oldID newID - you will see what was added(+ green)  and what was deleted(- red)
+
+Q How might using version control make you more confident to make changes that could break something?
+A git checkout ID - take you to that address - 
+  git log - before that ID history - Show the commits made in this repository, starting with the most recent. It doesn't take any arguments.
+
+
+  ------------------------------------------
+
+  Git command review
+Compare two commits, printing each line that is present in one commit but not the other.
+
+git diff will do this. It takes two arguments - the two commit ids to compare. 
+
+
+Make a copy of an entire Git repository, including the history, onto your own computer.
+
+git clone will do this. It takes one argument - the url of the repository to copy. 
+Cloning a repository gives you a copy of that repository and configures the original repository as a remote.
+Copying a repository just gives you a copy of that repository.
+
+
+
+Temporarily reset all files in a directory to their state at the time of a specific commit.
+
+git checkout will do this. It takes one argument - the commit ID to restore. 
+
+
+Show the commits made in this repository, starting with the most recent.
+
+git log will do this. It doesn't take any arguments.
